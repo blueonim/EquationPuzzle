@@ -2,39 +2,35 @@ import Operator.*
 
 private val CUBE1 = Shape("cube1",
     setOf(
-        Face(DIVIDE, 2),
         Face(DIVIDE, 3),
-        Face(DIVIDE, 4),
-        Face(ADD, 6)
+        Face(SUBTRACT, 3),
+        Face(MULTIPLY, 6)
     )
 )
 private val CUBE2 = Shape("cube2",
         setOf(
-        Face(ADD, 0),
-        Face(ADD, 5),
-        Face(MULTIPLY, 1),
+        Face(ADD, 6),
+        Face(DIVIDE, 9),
         Face(ADD, 7)
     )
 )
 private val CUBE3 = Shape("cube3",
     setOf(
-        Face(ADD, 2),
-        Face(SUBTRACT, 1),
-        Face(SUBTRACT, 8),
-        Face(ADD, 0)
+        Face(ADD, 6),
+        Face(ADD, 5),
+        Face(SUBTRACT, 8)
     )
 )
 private val CUBE4 = Shape("cube4",
     setOf(
         Face(MULTIPLY, 5),
         Face(MULTIPLY, 4),
-        Face(MULTIPLY, 1),
-        Face(ADD, 3)
+        Face(ADD, 4)
     )
 )
 val CUBE_PUZZLE = setOf(CUBE1, CUBE2, CUBE3, CUBE4)
-const val CUBE_PUZZLE_INITIAL = 0.0
-const val CUBE_PUZZLE_ANSWER = 10.0
+const val CUBE_PUZZLE_INITIAL = 1.0
+const val CUBE_PUZZLE_ANSWER = 11.0
 
 private val CYLINDER1 = Shape("cylinder1",
     setOf(
