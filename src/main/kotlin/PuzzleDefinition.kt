@@ -8,15 +8,15 @@ private val CUBE1 = Shape("cube1",
     )
 )
 private val CUBE2 = Shape("cube2",
-        setOf(
+    setOf(
         Face(ADD, 6),
         Face(DIVIDE, 9),
-        Face(ADD, 7)
+        Face(DIVIDE, 7)
     )
 )
 private val CUBE3 = Shape("cube3",
     setOf(
-        Face(ADD, 6),
+        Face(SUBTRACT, 6),
         Face(ADD, 5),
         Face(SUBTRACT, 8)
     )
